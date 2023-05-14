@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "JenkinsDockerTestNunit": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
