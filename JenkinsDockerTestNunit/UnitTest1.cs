@@ -6,7 +6,7 @@ namespace JenkinsDockerTestNunit
 {
     public class Tests
     {
-        WebDriver driver;
+        IWebDriver driver { get; set; }
 
         [SetUp]
         public void Setup()
@@ -28,6 +28,18 @@ namespace JenkinsDockerTestNunit
         public void Test1()
         {
             driver.Navigate().GoToUrl("https://index.hu/");
+            IWebElement barat = driver.FindElement(By.XPath("//img[contains(@alt, 'Barátság')]"));
+
+            string indexvas = barat.GetAttribute("src");
+
+            Assert.IsTrue(indexvas.Contains("indexvas"));
+        }
+
+        [Test] public void Test2()
+        {
+            bool x = true;
+
+            Assert.IsTrue(x);
         }
     }
 }
