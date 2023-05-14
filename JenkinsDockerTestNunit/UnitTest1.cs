@@ -41,5 +41,13 @@ namespace JenkinsDockerTestNunit
 
             Assert.IsTrue(x);
         }
+
+        [Test]
+        public void Test3()
+        {
+            bool x = true;
+
+            Assert.IsTrue(x);
+        }
     }
 }
