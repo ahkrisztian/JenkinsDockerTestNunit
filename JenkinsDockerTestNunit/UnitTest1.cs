@@ -39,7 +39,7 @@ namespace JenkinsDockerTestNunit
         [Test]
         public void Test3()
         {
-            driver.Navigate().GoToUrl("https://wccftech.hu/");
+            driver.Navigate().GoToUrl("https://wccftech.com/");
         }
     }
 }
