@@ -11,6 +11,7 @@ COPY . .
 WORKDIR "/src/JenkinsDockerTestNunit"
 RUN dotnet build "JenkinsDockerTestNunit.csproj" -c Release -o /app/build
 
+
 FROM build AS publish
 RUN dotnet publish "JenkinsDockerTestNunit.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
