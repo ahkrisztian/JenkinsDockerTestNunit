@@ -6,5 +6,10 @@
     "Docker": {
       "commandName": "Docker"
     }
+  },
+  "runtimeOptions": {
+    "configProperties": {
+      "System.Globalization.Invariant": true
+    }
   }
 }
